@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/pooriaPoorsarvi/GO-Training/packaging/second_package"
+	"github.com/pooriaPoorsarvi/GO-Training/scopes/packaging/second_package"
 )
 
 /*
