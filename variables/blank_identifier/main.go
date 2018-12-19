@@ -30,6 +30,5 @@ func notUsingReturns() string {
 func main(){
 	fmt.Println("if calling this function causes an error, we will recieve a log \n", normal())
 	fmt.Println("if calling this function causes an error, we won't recieve a log \n", notUsingReturns())
-
 }
 
