@@ -54,3 +54,18 @@ func main(){
 	fmt.Println(arr3 == nil)
 	fmt.Println()
 }
+/*
+output :
+[]
+true
+
+[] 0
+true
+false
+
+[] 0
+false
+false
+
+false
+*/
