@@ -11,7 +11,7 @@ size of your buffer
 
 func main(){
 	// please keep in mind how we used b as a flag instead of using a wait group, so that we won't have to share memory
-	//for the purpose of communicating
+	//for the purpose of communicating, the use of this flag is also called semaphore
 	c := make(chan int)
 	// we have to use make in order to initialize a channel because it has underlying types that need to be made
 	//in order to use it
