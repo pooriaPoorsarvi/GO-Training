@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"runtime"
+)
 
 /*
 Here we are gonna use n channels that act as our inputs and m channels that read from these inputs
@@ -8,6 +11,10 @@ we manage these channels and close them before the program finishes
 */
 
 
+
+func init(){
+	runtime.GOMAXPROCS(runtime.NumCPU())
+}
 
 
 
@@ -91,18 +98,18 @@ func main(){
 /*
 output :
 0
-1
-1
-2
-2
-3
-4
-Input Closed .
 0
 3
+1
+4
+2
+3
 4
 Input Closed .
+2
+Input Closed .
 Reading Channel Closed .
+1
 Reading Channel Closed .
 Reading Channel Closed .
 Program was Finished
